@@ -1,0 +1,55 @@
+.ranking-bar{
+    height: 100%;
+    width: 100%;
+    background-color: #eff8ff;
+    opacity: 0.95;
+    border-radius: 35px;
+    transition: 0.3s;
+    padding: 20px;
+    border: 2px solid #d0e4f7;
+}
+.type-button{
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: 1px solid #00000025;
+    padding: 13px; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.type-button:hover{
+    scale: 1.05;
+    cursor: pointer;
+    background-color: #2C95FF;
+}
+.rank-card{
+    background-color: rgb(255, 255, 255); width: auto; height: 450px; border-radius: 20px;
+    border: 1px solid #00000025;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.rank-card:hover{
+    background-color: #f9f9f9; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.other-rank{
+    background-color: white; padding: 10px; border-radius: 10px;
+    transition: 0.3s;
+}
+.other-rank span{
+    font-size: 20px;
+}
+.other-rank h2{
+    text-align: center;
+}
+.other-rank:hover{
+    background-color: #f9f9f9; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px);
+    cursor: pointer;
+}

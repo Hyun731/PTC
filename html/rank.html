@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIKKO</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/rank.css" />
+    <script src="../js/rank.js" defer></script>
+</head>
+<body>
+    <div class="top">
+        <h1 onclick="location.href='main.html'" style="cursor: pointer;">KIKKO</h1>
+    </div>
+    <div style="display: grid; grid-template-columns:2fr 1fr; height: 100vh; background-color: white;">
+        <div style="display: grid; grid-template-columns:1fr 1fr 1fr;">
+                <div style="display: flex;  padding-top: 100px; flex-direction: column; justify-content: center; padding-left: 10px;padding-right: 10px;">
+                    <div class="rank-card">
+                        <div class="profile-image" style="width: 230px; height: 230px; border: 1px solid #00000025;"></div>
+                        <h1 style="text-align: center; color: silver;">2위</h1>
+                        <h1 style="text-align: center;" id="rank2-name">#####</h1>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; padding-bottom: 250px; flex-direction: column; padding-left: 10px;padding-right: 10px;">
+                    <h1 style="text-align: center; margin-top: 100px; margin-bottom: 50px; font-size: 50px;">이달의 랭크</h1>
+                    <div class="rank-card">
+                        <div class="profile-image" style="width: 230px; height: 230px; border: 1px solid #00000025;"></div>
+                        <h1 style="text-align: center; color: rgb(255, 217, 0);">1위</h1>
+                        <h1 style="text-align: center;" id="rank1-name">#####</h1>
+                    </div>
+                </div>
+                <div style="display: flex;  padding-top: 100px; flex-direction: column; justify-content: center; padding-left: 10px;padding-right: 10px;">
+                    <div class="rank-card">
+                        <div class="profile-image" style="width: 230px; height: 230px; border: 1px solid #00000025;"></div>
+                        <h1 style="text-align: center; color: #c59654;">3위</h1>
+                        <h1 style="text-align: center;" id="rank3-name">#####</h1>
+                    </div>
+                </div>
+        </div>
+        <div style="display: flex; ; padding-top: 100px; justify-content: center; border-left: 2px solid #00000025;">
+            <div class="ranking-bar" style="width: 90%; height: 88%;">
+                <div style="display: flex; width: auto; height: 70px;gap: 10px;">
+                    <div class="type-button"><p style="font-size: 300;">팀 순위</p></div>
+                    <div class="type-button"><p>개인 순위</p></div>
+                </div>
+                <div style="display: grid; width: auto; height: 600px; grid-template-rows: repeat(7,1fr); gap :10px;" id="team">
+                    <div class="other-rank">
+                        <span>4위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>5위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>6위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>7위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>8위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>9위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>10위</span>
+                        <h2>팀이다</h2>
+                    </div>
+                </div>
+                <div style="display: none; width: auto; height: 600px; grid-template-rows: repeat(7,1fr); gap :10px;" id="solo">
+                    <div class="other-rank">
+                        <span>4위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>5위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>6위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>7위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>8위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>9위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                    <div class="other-rank">
+                        <span>10위</span>
+                        <h2>개인이다</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

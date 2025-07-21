@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KIKKO</title>
+    <link rel="stylesheet" href="../css/team_profile.css" />
+
+</head>
+
+<body>
+    <div class="top">
+        <h1 onclick="location.href='main.html'" style="cursor: pointer;">KIKKO</h1>
+    </div>
+    <div class="sidebar">
+        <div class="bx active" data-tab="profile">
+            <h2>팀 프로필</h2>
+        </div>
+        <div class="bx" data-tab="management">
+            <h2>팀원 관리</h2>
+        </div>
+        <div class="bx" data-tab="history">
+            <h2>전적</h2>
+        </div>
+        <div class="bx" data-tab="match">
+            <h2>매치 신청</h2>
+        </div>
+    </div>
+    <div class="content">
+        <div id="profile" class="wrapper tab-content">
+            <div class="banner"></div>
+            <div class="header">
+                <img class="profile-pic" src="https://via.placeholder.com/100"/>
+                <div class="team-name"> FC</div>
+                <button class=btn>경기 신청 보내기</button>
+            </div>
+            <div class="info-grid">
+                <div class="info-box"><strong>활동 지역</strong><br><span id="region">0</span></div>
+                <div class="info-box"><strong>팀 수준</strong><br><span id="level">0</span></div>
+                <div class="info-box"><strong>평균 별점</strong><br><span id="score">0</span></div>
+                <div class="info-box"><strong>대표자</strong><br><span id="header">0</span></div>
+            </div>
+            <div class="intro-box">
+                <strong>팀 소개</strong>
+                <p>
+                    s
+                </p>
+            </div>
+        </div>
+
+        <div id="management" class="wrapper tab-content" style="display:none;">
+            <div class="member-list">
+                <h2>팀원 목록</h2>
+                <div id="memberList"></div>
+                <button class="add-button" onclick="addMember()">+ 팀원 추가</button>
+            </div>
+            <div class="member-detail" id="memberDetail">
+                <p style="color: gray;">왼쪽에서 팀원을 선택하세요.</p>
+            </div>
+        </div>
+
+        <div id="history" class="wrapper tab-content" style="display:none;">
+            <div class="history-wrapper">
+                <div class="match-list">
+                    <h2>매치 목록</h2>
+                    <div id="matchList"></div>
+                </div>
+                <div class="match-detail" id="matchDetail">
+                    <h2>전적 통계</h2>
+                    <div class="match-summary">
+                        <h3 id="totalMatches">총 경기 수: 0</h3>
+                        <h3 id="wins">승: 0</h3>
+                        <h3 id="draws">무: 0</h3>
+                        <h3 id="losses">패: 0</h3>
+                        <h3 id="winRate">승률: 0%</h3>
+                    </div>
+                    <div id="matchInfo" style="margin-top: 30px;"></div>
+                    <div id="scoreInputSection" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="match" class="wrapper tab-content" style="display:none;">
+            <h2>매치 신청 목록</h2>
+            <div id="matchRequestsList">
+                <p class="empty-message">현재 매치 신청이 없습니다.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/team_profile.js"></script>
+</body>
+
+</html>

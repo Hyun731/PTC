@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIKKO</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="top">
+    <h1 onclick="location.href='main.html'" style="cursor: pointer;">KIKKO</h1>
+  </div>
+
+  <section id="s1">
+    <div class="container" style="padding-top: 70px;">
+      <div class="card profile-card" onclick="location.href='my_profile.html'">
+        <div class="profile-image"></div>
+        <h1 class="profile-name">사용자 명</h1>
+        <p class="profile-quote">"한마디 입력"</p>
+        <h1 class="profile-position">포지션 : ###</h1>
+      </div>
+      <div class="card" style="grid-row: 1 / 2; grid-column: 2 / 4; padding: 20px;"
+        onclick="location.href='team_profile.html'">
+        <h2 style="font-size: 50px;">나의 팀</h2>
+        <div style="display: inline-block; padding: 40px;">
+          <p style="font-size: 30px; font-weight:lighter;">나의 팀에서 팀 정보를 확인하고,<br>새로운 경기를 만들거나 팀원들과 소통해보세요!</p>
+        </div>
+      </div>
+      <div class="card" style="grid-row: 2 / 3; grid-column: 2 / 3; "></div>
+      <div class="card" style="grid-row: 2 / 3; grid-column: 3 / 4; " onclick="location.href='rank.html'">
+        <span style="font-size: 50px; font-weight: bold;">랭킹</span>
+        <div style="display: flex; flex-direction: row; margin-left: 50px;">
+          <div class="profile-image" style="width: 100px; height: 100px; margin: 0;"></div>
+          <div
+            style="margin-left: 30px; justify-content: center; align-items: center; display: flex; flex-direction: column;">
+            <p style="font-weight: bold; font-size: 20px;">우리팀 순위</p>
+            <p style="font-weight: bold; font-size: 40px;">N 등</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="s2">
+    <div class="container" id="top-teams-container"
+      style="grid-template-columns: 400px 400px 400px; grid-template-rows: repeat(2, 300px); padding-bottom: 0; padding-top: 0;">
+      <!-- JS가 이 안에 카드들을 자동으로 넣을 거야 -->
+    </div>
+    <div style="display: flex; justify-content: center; position: relative; margin-bottom: 60px;">
+      <button onclick="location.href='search.html'">검색</button>
+    </div>
+  </section>
+  <section id="s3">
+    <div class="container"
+      style="grid-template-columns: 400px 400px 400px; grid-template-rows: 600px; padding-bottom: 0; padding-top: 0; text-align: center;">
+      <div class="card">
+        <h2 style="font-size: 45px;">다음 경기 정보</h2>
+        <div style="display: flex; height: 500px; width: 360px; justify-content: center; align-items: center;">
+          <p style="font-size: 30px; font-weight:lighter; color: #1F2937;">경기 일정이 없습니다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="font-size: 45px;">최근 전적</h2>
+        <div style="display: flex; height: 500px; width: 360px; justify-content: center; align-items: center;">
+          <p style="font-size: 30px; font-weight:lighter; color: #1F2937;">경기 전적이 없습니다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="font-size: 45px;">팀 공지</h2>
+        <div style="display: flex; height: 500px; width: 360px; justify-content: center; align-items: center;">
+          <p style="font-size: 30px; font-weight:lighter; color: #1F2937;">최근에 올라온<br>
+            공지가 없습니다.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="circle-nav">
+    <a href="#s1">
+      <div class="circle" id="one"></div>
+    </a>
+    <a href="#s2">
+      <div class="circle" id="two"></div>
+    </a>
+    <a href="#s3">
+      <div class="circle" id="three"></div>
+    </a>
+  </div>
+
+</body>
+
+</html>

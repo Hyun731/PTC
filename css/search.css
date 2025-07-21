@@ -1,0 +1,124 @@
+.side {
+    width: 280px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+
+.side h2,.side h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.side label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.side select,
+.side input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.side button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.side input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.side hr {
+    margin: 25px 0;
+}
+body{
+    overflow: scroll;
+}
+div.text{
+    padding: 10px;
+}
+div.box{
+    padding-top: 90px;
+    margin-left: 320px;
+    width: calc(100% - 340px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div.smallbox{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    margin: 35px;
+    display: inline-block;
+    background-image: url(https://cdn.discordapp.com/attachments/746683143754481696/1371725212026015814/image.png?ex=68242e27&is=6822dca7&hm=ff1ab5435d1e5d4ec1b5c2554c8e31edfaaf2754f0532a4bc792d4d8506609db&);
+    background-size : cover;
+    border-radius: 30px;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+div.isb{
+    width: 100%;
+    height: 100px;
+    border: none;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 0px 30px 30px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid gray;
+
+}
+.smallbox:hover{
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
