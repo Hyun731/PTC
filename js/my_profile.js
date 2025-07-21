@@ -80,4 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch((err) => {
             console.error("유저 정보 불러오기 실패:", err);
         });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> refs/remotes/origin/main
