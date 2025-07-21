@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
 
-        // 비밀번호 확인
         if (password !== confirmPassword) {
             errorMessage.style.display = 'block';
             return;
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
             errorMessage.style.display = 'none';
         }
 
-        // 서버로 회원가입 요청
         const data = {
             username: username,       
             id: userId,        

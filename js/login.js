@@ -5,7 +5,6 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        // 실제 백엔드 서버 주소로 변경하세요
         const response = await fetch('http://localhost:8000/user/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},

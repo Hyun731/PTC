@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 처음 페이지 열릴 때 전체 팀 불러오기
     loadTeams();
 
-    // 조건 적용 버튼 클릭 이벤트
     document.getElementById("apply-conditions").addEventListener("click", async () => {
         const teamName = document.getElementById("team-name").value.trim();
         const region = document.getElementById("region-select").value;
         const level = document.getElementById("level-select").value;
 
-        // 조건 객체, 빈 값이면 null로 보내기
         const body = {
             team_name: teamName !== "" ? teamName : null,
             region: region !== "" ? region : null,
@@ -38,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadTeams() {
     try {
-        // 조건 없이 전체 조회 요청 (빈 객체)
         const res = await fetch("http://localhost:8000/team/team_search", {
             method: "POST",
             headers: {
@@ -60,7 +56,7 @@ async function loadTeams() {
 
 function renderTeams(teams) {
     const container = document.querySelector(".box");
-    container.innerHTML = ""; // 기존 내용 초기화
+    container.innerHTML = "";
 
     if (!Array.isArray(teams) || teams.length === 0) {
         container.innerHTML = "<p>조건에 맞는 팀이 없습니다.</p>";
