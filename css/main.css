@@ -32,13 +32,13 @@
     }
 
     #s1 {
-      background-image: url(/img/001.png);
+      background-image: url(../img/001.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     #s2 {
-      background-image: url(/img/002.png);
+      background-image: url(../img/002.png);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -46,7 +46,7 @@
     }
 
     #s3 {
-      background-image: url(/img/003.png);
+      background-image: url(../img/003.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
